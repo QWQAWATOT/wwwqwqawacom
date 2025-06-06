@@ -330,17 +330,11 @@
                     <h2 class="article-title">我的另一个博客</h2>
                     <footer class="article-time">
                         
-                            QwQAwAToT的另一个博客（没什么用）
+                            QwQAwAToT的另一个博客（啥也没有）
                         
                     </footer>
                 </div>
         
-                
-                    
-                    
-                    <div class="article-image">
-                        <img src="https://t.mwm.moe/fj" loading="lazy">
-                    </div>
                 
             </a>
         </article>
@@ -357,11 +351,20 @@
                 </div>
         
                 
-                    
-                    
-                    <div class="article-image">
-                        <img src="https://store.fastly.steamstatic.com/public/shared/images/header/logo_steam.svg" loading="lazy">
-                    </div>
+            </a>
+        </article>
+    
+        <article>
+            <a href="https://www.github.com" target="_blank" rel="noopener">
+                <div class="article-details">
+                    <h2 class="article-title">Github</h2>
+                    <footer class="article-time">
+                        
+                            GitHub是一项基于云的服务，为软件开发和Git版本控制提供Internet托管。这有助于开发人员存储和管理他们的代码，同时跟踪和控制对其代码的更改。
+                        
+                    </footer>
+                </div>
+        
                 
             </a>
         </article>
@@ -552,8 +555,7 @@
     var pjax = new Pjax({
         selectors: [
             ".main-container",
-            ".js-Pjax",
-            "title",
+            "title"
         ]
     })
 </script>
@@ -582,37 +584,9 @@
         
         window.Stack.init();
     })
-</script><div class="js-Pjax">
-<script>
-    (function () {
-        
-        let comment = document.querySelector(".comment");
-        if (!comment) {
-            return
-        }
-        let script = document.createElement('script');
-        
-        script.setAttribute('src', 'https://giscus.app/client.js');
-        script.setAttribute('data-repo', 'QQWQAWA/WWWQWQAWACOM');
-        script.setAttribute('data-repo-id'='R_kgDON0ma8Q');
-        script.setAttribute('data-category'='Announcements');
-        script.setAttribute('data-category-id'='DIC_kwDON0ma8c4Cq7Zo');
-        script.setAttribute('data-mapping'='pathname');
-        script.setAttribute('data-strict'='0');
-        script.setAttribute('data-reactions-enabled'='1');
-        script.setAttribute('data-emit-metadata'='0');
-        script.setAttribute('data-input-position'='top');
-        script.setAttribute('data-theme'='light');
-        script.setAttribute('data-lang'='zh-CN');
-        script.setAttribute('crossorigin'='anonymous');
-        script.setAttribute('async','async');
-        
-        script.async = true;
-        
-        document.querySelector('.site-footer').before(script)
-    })(document);
 </script>
-<div><script>
+
+<script>
     async function renderKaTeX() {
         
         let katex = document.querySelector(".math-katex");

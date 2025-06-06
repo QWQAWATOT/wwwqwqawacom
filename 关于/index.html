@@ -374,58 +374,6 @@
      
     
         
-    <script
-    src="https://giscus.app/client.js"
-    data-repo="QQWQAWA/WWWQWQAWACOM"
-    data-repo-id="R_kgDON0ma8Q"
-    data-category="Announcements"
-    data-category-id="DIC_kwDON0ma8c4Cq7Zo"
-    data-mapping="pathname"
-    data-strict="0"
-    data-reactions-enabled="1"
-    data-emit-metadata="0"
-    data-input-position="top"
-    data-theme="light"
-    data-lang="en"
-    data-loading=""
-    crossorigin="anonymous"
-    async
-></script>
-<script>
-    function setGiscusTheme(theme) {
-        let giscus = document.querySelector("iframe.giscus-frame");
-        if (giscus) {
-            giscus.contentWindow.postMessage(
-                {
-                    giscus: {
-                        setConfig: {
-                            theme: theme,
-                        },
-                    },
-                },
-                "https://giscus.app"
-            );
-        }
-    }
-
-    (function () {
-        addEventListener("message", (e) => {
-            if (event.origin !== "https://giscus.app") return;
-            handler();
-        });
-        window.addEventListener("onColorSchemeChange", handler);
-
-        function handler() {
-            if (document.documentElement.dataset.scheme === "light") {
-                setGiscusTheme('light');
-            } else {
-                setGiscusTheme('dark_dimmed');
-            }
-        }
-    })();
-</script>
-    <div class="comment"></div>
-
     
 
     <footer class="site-footer">
@@ -606,8 +554,7 @@
     var pjax = new Pjax({
         selectors: [
             ".main-container",
-            ".js-Pjax",
-            "title",
+            "title"
         ]
     })
 </script>
@@ -636,37 +583,9 @@
         
         window.Stack.init();
     })
-</script><div class="js-Pjax">
-<script>
-    (function () {
-        
-        let comment = document.querySelector(".comment");
-        if (!comment) {
-            return
-        }
-        let script = document.createElement('script');
-        
-        script.setAttribute('src', 'https://giscus.app/client.js');
-        script.setAttribute('data-repo', 'QQWQAWA/WWWQWQAWACOM');
-        script.setAttribute('data-repo-id'='R_kgDON0ma8Q');
-        script.setAttribute('data-category'='Announcements');
-        script.setAttribute('data-category-id'='DIC_kwDON0ma8c4Cq7Zo');
-        script.setAttribute('data-mapping'='pathname');
-        script.setAttribute('data-strict'='0');
-        script.setAttribute('data-reactions-enabled'='1');
-        script.setAttribute('data-emit-metadata'='0');
-        script.setAttribute('data-input-position'='top');
-        script.setAttribute('data-theme'='light');
-        script.setAttribute('data-lang'='zh-CN');
-        script.setAttribute('crossorigin'='anonymous');
-        script.setAttribute('async','async');
-        
-        script.async = true;
-        
-        document.querySelector('.site-footer').before(script)
-    })(document);
 </script>
-<div><script>
+
+<script>
     async function renderKaTeX() {
         
         let katex = document.querySelector(".math-katex");

@@ -371,8 +371,7 @@
     var pjax = new Pjax({
         selectors: [
             ".main-container",
-            ".js-Pjax",
-            "title",
+            "title"
         ]
     })
 </script>
@@ -401,37 +400,9 @@
         
         window.Stack.init();
     })
-</script><div class="js-Pjax">
-<script>
-    (function () {
-        
-        let comment = document.querySelector(".comment");
-        if (!comment) {
-            return
-        }
-        let script = document.createElement('script');
-        
-        script.setAttribute('src', 'https://giscus.app/client.js');
-        script.setAttribute('data-repo', 'QQWQAWA/WWWQWQAWACOM');
-        script.setAttribute('data-repo-id'='R_kgDON0ma8Q');
-        script.setAttribute('data-category'='Announcements');
-        script.setAttribute('data-category-id'='DIC_kwDON0ma8c4Cq7Zo');
-        script.setAttribute('data-mapping'='pathname');
-        script.setAttribute('data-strict'='0');
-        script.setAttribute('data-reactions-enabled'='1');
-        script.setAttribute('data-emit-metadata'='0');
-        script.setAttribute('data-input-position'='top');
-        script.setAttribute('data-theme'='light');
-        script.setAttribute('data-lang'='zh-CN');
-        script.setAttribute('crossorigin'='anonymous');
-        script.setAttribute('async','async');
-        
-        script.async = true;
-        
-        document.querySelector('.site-footer').before(script)
-    })(document);
 </script>
-<div><script>
+
+<script>
     async function renderKaTeX() {
         
         let katex = document.querySelector(".math-katex");
