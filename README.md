@@ -1,4 +1,4 @@
-本站托管于[Netlify](https://netlify.com "跳转Netlify")，使用[Hugo](https://gohugo.io/ "跳转Hugo主页")构建并搭配[Stack](https://github.com/CaiJimmy/hugo-theme-stack "跳转主题Github仓库")主题，字体为[霞鹜文楷](https://github.com/lxgw/LxgwWenKai/ "跳转字体Github仓库")
+使用[Hugo](https://gohugo.io/ "跳转Hugo主页")构建并搭配[Stack](https://github.com/CaiJimmy/hugo-theme-stack "跳转主题Github仓库")主题，字体为[霞鹜文楷](https://github.com/lxgw/LxgwWenKai/ "跳转字体Github仓库")
 <br>
 目前这里啥都没有，我也懒得更新
 <br>
