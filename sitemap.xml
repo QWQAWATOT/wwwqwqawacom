@@ -2,32 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1832/</loc>
+    <loc>https://www.qwqawa.com/</loc>
     <lastmod>2025-04-19T13:53:16+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1832/post/</loc>
+    <loc>https://www.qwqawa.com/post/</loc>
     <lastmod>2025-04-19T13:53:16+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1832/p/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E6%96%87%E7%AB%A0%E6%8D%8F/</loc>
+    <loc>https://www.qwqawa.com/p/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E6%96%87%E7%AB%A0%E6%8D%8F/</loc>
     <lastmod>2025-04-19T13:53:16+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1832/p/%E7%82%B9%E5%87%BB%E6%AD%A4%E5%A4%84%E8%BF%9B%E5%85%A5%E5%85%B3%E4%BA%8E%E9%A1%B5%E9%9D%A2%E5%96%B5~/</loc>
+    <loc>https://www.qwqawa.com/p/%E7%82%B9%E5%87%BB%E6%AD%A4%E5%A4%84%E8%BF%9B%E5%85%A5%E5%85%B3%E4%BA%8E%E9%A1%B5%E9%9D%A2%E5%96%B5~/</loc>
     <lastmod>2025-04-19T13:11:56+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1832/page/</loc>
+    <loc>https://www.qwqawa.com/page/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1832/archives/</loc>
+    <loc>https://www.qwqawa.com/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1832/categories/</loc>
+    <loc>https://www.qwqawa.com/categories/</loc>
   </url><url>
-    <loc>http://localhost:1832/tags/</loc>
+    <loc>https://www.qwqawa.com/tags/</loc>
   </url><url>
-    <loc>http://localhost:1832/%E5%85%B3%E4%BA%8E/</loc>
+    <loc>https://www.qwqawa.com/%E5%85%B3%E4%BA%8E/</loc>
   </url><url>
-    <loc>http://localhost:1832/search/</loc>
+    <loc>https://www.qwqawa.com/search/</loc>
   </url><url>
-    <loc>http://localhost:1832/%E5%8F%8B%E9%93%BE/</loc>
+    <loc>https://www.qwqawa.com/%E5%8F%8B%E9%93%BE/</loc>
   </url>
 </urlset>
