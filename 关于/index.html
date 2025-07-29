@@ -8,12 +8,12 @@
 <link rel='canonical' href='https://www.qwqawa.com/%E5%85%B3%E4%BA%8E/'>
 
 <link rel="stylesheet" href="/scss/style.min.325d65a5c3c05d721beffd3c66eac0c84f1fdb0abdaf5afcc40c97802098cdc6.css"><meta property='og:title' content="关于">
-<meta property='og:description' content="欢迎来到我的网站ヾ(^▽^ヾ),我是QwQAwAToT 本站托管于Netlify，使用Hugo构建并搭配Stack主题，字体为霞鹜文楷 目前这里啥都没有，我也懒得更新 最近更新时间:2025/7/9\n联系方式 1.邮箱qwq@qwq.work 2.邮箱qwqawa@88.com 3.哔哩哔哩站内信\n">
+<meta property='og:description' content="欢迎来到我的网站ヾ(^▽^ヾ),我是QwQAwAToT 本站托管于Netlify，使用Hugo构建并搭配Stack主题，字体为霞鹜文楷 目前这里啥都没有，我也懒得更新 最近更新时间:2025/7/29\n联系方式 1.邮箱qwq@qwq.work 2.邮箱qwqawa@88.com 3.哔哩哔哩站内信\n">
 <meta property='og:url' content='https://www.qwqawa.com/%E5%85%B3%E4%BA%8E/'>
 <meta property='og:site_name' content='秋哒不溜'>
 <meta property='og:type' content='article'><meta property='article:section' content='Page' />
 <meta name="twitter:title" content="关于">
-<meta name="twitter:description" content="欢迎来到我的网站ヾ(^▽^ヾ),我是QwQAwAToT 本站托管于Netlify，使用Hugo构建并搭配Stack主题，字体为霞鹜文楷 目前这里啥都没有，我也懒得更新 最近更新时间:2025/7/9\n联系方式 1.邮箱qwq@qwq.work 2.邮箱qwqawa@88.com 3.哔哩哔哩站内信\n">
+<meta name="twitter:description" content="欢迎来到我的网站ヾ(^▽^ヾ),我是QwQAwAToT 本站托管于Netlify，使用Hugo构建并搭配Stack主题，字体为霞鹜文楷 目前这里啥都没有，我也懒得更新 最近更新时间:2025/7/29\n联系方式 1.邮箱qwq@qwq.work 2.邮箱qwqawa@88.com 3.哔哩哔哩站内信\n">
     </head>
     <body class="
     article-page
@@ -341,7 +341,7 @@
 <br>
 目前这里啥都没有，我也懒得更新
 <br>
-最近更新时间:2025/7/9</p>
+最近更新时间:2025/7/29</p>
 <h2 id="联系方式">联系方式
 </h2><p>1.<a class="link" href="mailto:qwq@qwq.work" >邮箱qwq@qwq.work</a>
 <br>
@@ -634,24 +634,27 @@
 
 
 <script>
-    
-    topbar.config({
-        barColors: {
-            '0': 'rgba(255,  255, 255, 1)', 
-            '1.0': 'rgba(0, 149, 234,  1)' 
-        }
-    })
+	topbar.config({
+		barColors: {
+			'0': 'rgb(253,164,175)',
+			'1.0': 'rgb(250,227,236)'
+		}
+	})
+
 	
-    document.addEventListener('pjax:send', () => {
-        
-        topbar.show();
-    })
+	document.addEventListener('pjax:send', () => {
+		
+		topbar.show();
+	})
+
 	
-    document.addEventListener('pjax:complete', () => {
-        ....
-        
-        topbar.hide();
-    })
+	document.addEventListener('pjax:complete', () => {
+		
+		window.Stack.init();
+		
+		topbar.hide();
+
+	})
 </script>
 
 

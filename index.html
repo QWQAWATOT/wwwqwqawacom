@@ -601,24 +601,27 @@
 
 
 <script>
-    
-    topbar.config({
-        barColors: {
-            '0': 'rgba(255,  255, 255, 1)', 
-            '1.0': 'rgba(0, 149, 234,  1)' 
-        }
-    })
+	topbar.config({
+		barColors: {
+			'0': 'rgb(253,164,175)',
+			'1.0': 'rgb(250,227,236)'
+		}
+	})
+
 	
-    document.addEventListener('pjax:send', () => {
-        
-        topbar.show();
-    })
+	document.addEventListener('pjax:send', () => {
+		
+		topbar.show();
+	})
+
 	
-    document.addEventListener('pjax:complete', () => {
-        ....
-        
-        topbar.hide();
-    })
+	document.addEventListener('pjax:complete', () => {
+		
+		window.Stack.init();
+		
+		topbar.hide();
+
+	})
 </script>
 
 
