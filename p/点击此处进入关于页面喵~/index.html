@@ -311,9 +311,11 @@
     
     <p>正在跳转关于页面&hellip;
 <br>
-没有反应？<a class="link" href="/%E5%85%B3%E4%BA%8E/"  title="关于页面"
-    >点击此处跳转</a>喵~</p>
-<script>window.location.href = "/%E5%85%B3%E4%BA%8E/"</script>
+没有反应？<a class="link" href="/%E5%85%B3%E4%BA%8E/" data-pjax="#pjax-container" title="关于页面">点击此处跳转</a>喵~</p>
+<script>
+var url = "/%E5%85%B3%E4%BA%8E/";
+window.location.replace(url);
+</script>
 </section>
 
 

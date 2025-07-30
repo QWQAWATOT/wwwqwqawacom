@@ -15,9 +15,11 @@
         <guid>https://www.qwqawa.com/p/%E6%9A%82%E6%97%B6%E6%B2%A1%E6%9C%89%E6%96%87%E7%AB%A0%E6%8D%8F/</guid>
         <description>&lt;p&gt;正在跳转关于页面&amp;hellip;
 &lt;br&gt;
-没有反应？&lt;a class=&#34;link&#34; href=&#34;https://www.qwqawa.com/%E5%85%B3%E4%BA%8E/&#34;  title=&#34;关于页面&#34;
-    &gt;点击此处跳转&lt;/a&gt;喵~&lt;/p&gt;
-&lt;script&gt;window.location.href = &#34;/%E5%85%B3%E4%BA%8E/&#34;&lt;/script&gt;</description>
+没有反应？&lt;a class=&#34;link&#34; href=&#34;https://www.qwqawa.com/%E5%85%B3%E4%BA%8E/&#34; data-pjax=&#34;#pjax-container&#34; title=&#34;关于页面&#34;&gt;点击此处跳转&lt;/a&gt;喵~&lt;/p&gt;
+&lt;script&gt;
+var url = &#34;/%E5%85%B3%E4%BA%8E/&#34;;
+window.location.replace(url);
+&lt;/script&gt;</description>
         </item>
         <item>
         <title>点击此处进入关于页面喵~</title>
@@ -27,9 +29,11 @@
         <guid>https://www.qwqawa.com/p/%E7%82%B9%E5%87%BB%E6%AD%A4%E5%A4%84%E8%BF%9B%E5%85%A5%E5%85%B3%E4%BA%8E%E9%A1%B5%E9%9D%A2%E5%96%B5~/</guid>
         <description>&lt;p&gt;正在跳转关于页面&amp;hellip;
 &lt;br&gt;
-没有反应？&lt;a class=&#34;link&#34; href=&#34;https://www.qwqawa.com/%E5%85%B3%E4%BA%8E/&#34;  title=&#34;关于页面&#34;
-    &gt;点击此处跳转&lt;/a&gt;喵~&lt;/p&gt;
-&lt;script&gt;window.location.href = &#34;/%E5%85%B3%E4%BA%8E/&#34;&lt;/script&gt;</description>
+没有反应？&lt;a class=&#34;link&#34; href=&#34;https://www.qwqawa.com/%E5%85%B3%E4%BA%8E/&#34; data-pjax=&#34;#pjax-container&#34; title=&#34;关于页面&#34;&gt;点击此处跳转&lt;/a&gt;喵~&lt;/p&gt;
+&lt;script&gt;
+var url = &#34;/%E5%85%B3%E4%BA%8E/&#34;;
+window.location.replace(url);
+&lt;/script&gt;</description>
         </item>
         
     </channel>
