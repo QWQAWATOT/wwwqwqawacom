@@ -13,13 +13,7 @@
 <meta property='og:site_name' content='秋哒不溜'>
 <meta property='og:type' content='article'><meta property='article:section' content='Page' />
 <meta name="twitter:title" content="关于">
-<meta name="twitter:description" content="欢迎来到我的网站ヾ(^▽^ヾ),我是QwQAwAToT 本站托管于Netlify，使用Hugo构建并搭配Stack主题，字体为霞鹜文楷 目前这里啥都没有，我也懒得更新 最近更新时间:2025/7/29\n联系方式 1.邮箱qwq@qwq.work 2.邮箱qwqawa@88.com 3.哔哩哔哩站内信\n"><style>
-    .pswp__ui pswp__ui--hidden {
-        display: none;
-    }
-</style>
-
-
+<meta name="twitter:description" content="欢迎来到我的网站ヾ(^▽^ヾ),我是QwQAwAToT 本站托管于Netlify，使用Hugo构建并搭配Stack主题，字体为霞鹜文楷 目前这里啥都没有，我也懒得更新 最近更新时间:2025/7/29\n联系方式 1.邮箱qwq@qwq.work 2.邮箱qwqawa@88.com 3.哔哩哔哩站内信\n">
     </head>
     <body class="
     article-page
@@ -408,82 +402,6 @@
 
 
     
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-    
-    <div class="pswp__bg"></div>
-
-    
-    <div class="pswp__scroll-wrap">
-
-        
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-
-        
-        <div class="pswp__ui pswp__ui--hidden">
-
-            <div class="pswp__top-bar">
-
-                
-
-                <div class="pswp__counter"></div>
-
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                
-                
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                            <div class="pswp__preloader__donut"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div>
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-
-        </div>
-
-    </div>
-
-</div><script 
-                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
-                defer
-                >
-            </script><script 
-                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
-                defer
-                >
-            </script><link 
-                rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
-            ><link 
-                rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
-            >
 
             </main>
         </div>
@@ -567,7 +485,8 @@
     var pjax = new Pjax({
         selectors: [
             ".main-container",
-            "title"
+            "title",
+            ".js-Pjax"
         ]
     })
 </script>
@@ -586,7 +505,6 @@
             
             pjax._handleResponse(responseText, request, href, options);
         } else {
-            
         }
     }
 </script>
@@ -640,36 +558,6 @@
 
 
 <script>
-	var pjax = new Pjax({
-		elements: "a, form",
-		
-		selectors: [
-			"title",
-			".main-container",
-			".js-Pjax"
-		],
-		cacheBust: false
-	})
-
-	
-	pjax._handleResponse = pjax.handleResponse;
-	pjax.handleResponse = function(responseText, request, href, options) {
-		if (request.responseText.match("<html")) {
-			
-			if (responseText) {
-				let newDoc = new DOMParser().parseFromString(responseText, 'text/html');
-				let bodyClass = newDoc.body.className;
-				document.body.setAttribute("class", bodyClass)
-			}
-			
-			pjax._handleResponse(responseText, request, href, options);
-		} else {
-			window.open(href)
-			topbar.hide();
-		}
-	}
-
-	
 	topbar.config({
 		barColors: {
 			'0': 'rgb(253,164,175)',
@@ -689,20 +577,6 @@
 		window.Stack.init();
 		
 		topbar.hide();
-		
-		
-		
-		initTocHide();
-		
-		initScrollTop();
-		
-		initCodeMoreBox()
-		
-		showWelcomeMessage();
-		
-		renderKaTeX();
-		
-		initFlipClock();
 	})
 </script>
 

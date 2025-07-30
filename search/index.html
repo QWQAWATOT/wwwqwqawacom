@@ -13,13 +13,7 @@
 <meta property='og:site_name' content='秋哒不溜'>
 <meta property='og:type' content='article'><meta property='article:section' content='Page' />
 <meta name="twitter:title" content="搜索">
-<meta name="twitter:description" content=""><link rel="alternate" type="application/json" href="https://www.qwqawa.com/search/index.json"><style>
-    .pswp__ui pswp__ui--hidden {
-        display: none;
-    }
-</style>
-
-<link rel="preload" href="/search/index.json" as="fetch" crossorigin="anonymous">
+<meta name="twitter:description" content=""><link rel="alternate" type="application/json" href="https://www.qwqawa.com/search/index.json"><link rel="preload" href="/search/index.json" as="fetch" crossorigin="anonymous">
     </head>
     <body class="template-search">
     <script>
@@ -378,7 +372,8 @@
     var pjax = new Pjax({
         selectors: [
             ".main-container",
-            "title"
+            "title",
+            ".js-Pjax"
         ]
     })
 </script>
@@ -397,7 +392,6 @@
             
             pjax._handleResponse(responseText, request, href, options);
         } else {
-            
         }
     }
 </script>
@@ -451,36 +445,6 @@
 
 
 <script>
-	var pjax = new Pjax({
-		elements: "a, form",
-		
-		selectors: [
-			"title",
-			".main-container",
-			".js-Pjax"
-		],
-		cacheBust: false
-	})
-
-	
-	pjax._handleResponse = pjax.handleResponse;
-	pjax.handleResponse = function(responseText, request, href, options) {
-		if (request.responseText.match("<html")) {
-			
-			if (responseText) {
-				let newDoc = new DOMParser().parseFromString(responseText, 'text/html');
-				let bodyClass = newDoc.body.className;
-				document.body.setAttribute("class", bodyClass)
-			}
-			
-			pjax._handleResponse(responseText, request, href, options);
-		} else {
-			window.open(href)
-			topbar.hide();
-		}
-	}
-
-	
 	topbar.config({
 		barColors: {
 			'0': 'rgb(253,164,175)',
@@ -500,20 +464,6 @@
 		window.Stack.init();
 		
 		topbar.hide();
-		
-		
-		
-		initTocHide();
-		
-		initScrollTop();
-		
-		initCodeMoreBox()
-		
-		showWelcomeMessage();
-		
-		renderKaTeX();
-		
-		initFlipClock();
 	})
 </script>
 
