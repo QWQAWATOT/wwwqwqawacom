@@ -13,7 +13,13 @@
 <meta property='og:site_name' content='秋哒不溜'>
 <meta property='og:type' content='article'><meta property='article:section' content='Page' />
 <meta name="twitter:title" content="关于">
-<meta name="twitter:description" content="欢迎来到我的网站ヾ(^▽^ヾ),我是QwQAwAToT 本站托管于Netlify，使用Hugo构建并搭配Stack主题，字体为霞鹜文楷 目前这里啥都没有，我也懒得更新 最近更新时间:2025/7/29\n联系方式 1.邮箱qwq@qwq.work 2.邮箱qwqawa@88.com 3.哔哩哔哩站内信\n">
+<meta name="twitter:description" content="欢迎来到我的网站ヾ(^▽^ヾ),我是QwQAwAToT 本站托管于Netlify，使用Hugo构建并搭配Stack主题，字体为霞鹜文楷 目前这里啥都没有，我也懒得更新 最近更新时间:2025/7/29\n联系方式 1.邮箱qwq@qwq.work 2.邮箱qwqawa@88.com 3.哔哩哔哩站内信\n"><style>
+    .pswp__ui pswp__ui--hidden {
+        display: none;
+    }
+</style>
+
+
     </head>
     <body class="
     article-page
@@ -634,6 +640,36 @@
 
 
 <script>
+	var pjax = new Pjax({
+		elements: "a, form",
+		
+		selectors: [
+			"title",
+			".main-container",
+			".js-Pjax"
+		],
+		cacheBust: false
+	})
+
+	
+	pjax._handleResponse = pjax.handleResponse;
+	pjax.handleResponse = function(responseText, request, href, options) {
+		if (request.responseText.match("<html")) {
+			
+			if (responseText) {
+				let newDoc = new DOMParser().parseFromString(responseText, 'text/html');
+				let bodyClass = newDoc.body.className;
+				document.body.setAttribute("class", bodyClass)
+			}
+			
+			pjax._handleResponse(responseText, request, href, options);
+		} else {
+			window.open(href)
+			topbar.hide();
+		}
+	}
+
+	
 	topbar.config({
 		barColors: {
 			'0': 'rgb(253,164,175)',
@@ -653,10 +689,22 @@
 		window.Stack.init();
 		
 		topbar.hide();
-
+		
+		
+		
+		initTocHide();
+		
+		initScrollTop();
+		
+		initCodeMoreBox()
+		
+		showWelcomeMessage();
+		
+		renderKaTeX();
+		
+		initFlipClock();
 	})
 </script>
-
 
 
 

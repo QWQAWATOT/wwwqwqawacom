@@ -13,7 +13,13 @@
 <meta property='og:site_name' content='秋哒不溜'>
 <meta property='og:type' content='website'><meta property='og:updated_time' content=' 2025-04-19T13:53:16&#43;08:00 '/>
 <meta name="twitter:title" content="Posts">
-<meta name="twitter:description" content="Ciallo～(∠・ω< )⌒★"><link rel="alternate" type="application/rss&#43;xml" href="https://www.qwqawa.com/post/index.xml">
+<meta name="twitter:description" content="Ciallo～(∠・ω< )⌒★"><link rel="alternate" type="application/rss&#43;xml" href="https://www.qwqawa.com/post/index.xml"><style>
+    .pswp__ui pswp__ui--hidden {
+        display: none;
+    }
+</style>
+
+
     </head>
     <body class="">
     <script>
@@ -516,6 +522,36 @@
 
 
 <script>
+	var pjax = new Pjax({
+		elements: "a, form",
+		
+		selectors: [
+			"title",
+			".main-container",
+			".js-Pjax"
+		],
+		cacheBust: false
+	})
+
+	
+	pjax._handleResponse = pjax.handleResponse;
+	pjax.handleResponse = function(responseText, request, href, options) {
+		if (request.responseText.match("<html")) {
+			
+			if (responseText) {
+				let newDoc = new DOMParser().parseFromString(responseText, 'text/html');
+				let bodyClass = newDoc.body.className;
+				document.body.setAttribute("class", bodyClass)
+			}
+			
+			pjax._handleResponse(responseText, request, href, options);
+		} else {
+			window.open(href)
+			topbar.hide();
+		}
+	}
+
+	
 	topbar.config({
 		barColors: {
 			'0': 'rgb(253,164,175)',
@@ -535,10 +571,22 @@
 		window.Stack.init();
 		
 		topbar.hide();
-
+		
+		
+		
+		initTocHide();
+		
+		initScrollTop();
+		
+		initCodeMoreBox()
+		
+		showWelcomeMessage();
+		
+		renderKaTeX();
+		
+		initFlipClock();
 	})
 </script>
-
 
 
 
