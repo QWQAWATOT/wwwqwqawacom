@@ -50,19 +50,19 @@ window.location.replace(url);
         
         <guid>https://www.qwqawa.com/%E5%85%B3%E4%BA%8E/</guid>
         <description>&lt;h2 id=&#34;欢迎来到我的网站ヾヾ我是qwqawatot&#34;&gt;欢迎来到我的网站ヾ(^▽^ヾ),我是QwQAwAToT
-&lt;/h2&gt;&lt;p&gt;本站托管于&lt;a class=&#34;link&#34; href=&#34;https://netlify.com&#34;  title=&#34;跳转Netlify&#34;
+&lt;/h2&gt;&lt;p&gt;本站托管于&lt;a class=&#34;link&#34; href=&#34;https://netlify.com&#34;  title=&#34;点击跳转至Netlify官网&#34;
      target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Netlify&lt;/a&gt;，使用&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/&#34;  title=&#34;跳转Hugo主页&#34;
+    &gt;Netlify&lt;/a&gt;，使用&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/&#34;  title=&#34;点击跳转至Hugo主页&#34;
      target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo&lt;/a&gt;构建并搭配&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;  title=&#34;跳转主题Github仓库&#34;
+    &gt;Hugo&lt;/a&gt;构建并搭配&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;  title=&#34;点击跳转至主题Github仓库&#34;
      target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Stack&lt;/a&gt;主题，字体为&lt;a class=&#34;link&#34; href=&#34;https://github.com/lxgw/LxgwWenKai/&#34;  title=&#34;跳转字体Github仓库&#34;
+    &gt;Stack&lt;/a&gt;主题，字体为&lt;a class=&#34;link&#34; href=&#34;https://github.com/lxgw/LxgwWenKai/&#34;  title=&#34;点击跳转至字体Github仓库&#34;
      target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;霞鹜文楷&lt;/a&gt;
 &lt;br&gt;
-目前这里啥都没有，我也懒得更新
+目前这里啥都没有，也许将来会有更新
 &lt;br&gt;
-最近更新时间:2025/7/29&lt;/p&gt;
+最近更新时间:2025/8/3&lt;/p&gt;
 &lt;h2 id=&#34;联系方式&#34;&gt;联系方式
 &lt;/h2&gt;&lt;p&gt;1.&lt;a class=&#34;link&#34; href=&#34;mailto:qwq@qwq.work&#34; &gt;邮箱qwq@qwq.work&lt;/a&gt;
 &lt;br&gt;
@@ -86,7 +86,8 @@ window.location.replace(url);
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://www.qwqawa.com/%E5%8F%8B%E9%93%BE/</guid>
-        <description>&lt;p&gt;要加友链可以给我发邮件喵~&lt;/p&gt;
+        <description>&lt;p&gt;要加友链可以给我发&lt;a class=&#34;link&#34; href=&#34;mailto:qwq@qwq.work&#34;  title=&#34;点击跳转至邮箱&#34;
+    &gt;邮件&lt;/a&gt;喵~&lt;/p&gt;
 </description>
         </item>
         
