@@ -52,11 +52,11 @@ window.location.replace(url);
         <description>&lt;h2 id=&#34;欢迎来到我的网站ヾヾ我是qwqawatot&#34;&gt;欢迎来到我的网站ヾ(^▽^ヾ),我是QwQAwAToT
 &lt;/h2&gt;&lt;p&gt;本站托管于&lt;a class=&#34;link&#34; href=&#34;https://netlify.com&#34;  title=&#34;点击跳转至Netlify官网&#34;
      target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Netlify&lt;/a&gt;，使用&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/&#34;  title=&#34;点击跳转至Hugo主页&#34;
+    &gt;Netlify&lt;/a&gt;，使用&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/&#34;  title=&#34;点击跳转至Hugo官网&#34;
      target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo&lt;/a&gt;构建并搭配&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;  title=&#34;点击跳转至主题Github仓库&#34;
+    &gt;Hugo&lt;/a&gt;构建并搭配&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;  title=&#34;点击跳转至主题GitHub仓库&#34;
      target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Stack&lt;/a&gt;主题，字体为&lt;a class=&#34;link&#34; href=&#34;https://github.com/lxgw/LxgwWenKai/&#34;  title=&#34;点击跳转至字体Github仓库&#34;
+    &gt;Stack&lt;/a&gt;主题，字体为&lt;a class=&#34;link&#34; href=&#34;https://github.com/lxgw/LxgwWenKai/&#34;  title=&#34;点击跳转至字体GitHub仓库&#34;
      target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;霞鹜文楷&lt;/a&gt;
 &lt;br&gt;
