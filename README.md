@@ -1,4 +1,3 @@
-##  欢迎来到我的网站ヾ(^▽^ヾ),我是QwQAwAToT
 本站托管于[Netlify](https://netlify.com "点击跳转至Netlify官网")，使用[Hugo](https://gohugo.io/ "点击跳转至Hugo主页")构建并搭配[Stack](https://github.com/CaiJimmy/hugo-theme-stack "点击跳转至主题Github仓库")主题，字体为[霞鹜文楷](https://github.com/lxgw/LxgwWenKai/ "点击跳转至字体Github仓库")
 <br>
 目前这里啥都没有，也许将来会有更新
