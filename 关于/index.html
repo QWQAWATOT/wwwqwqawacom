@@ -93,7 +93,7 @@
                     <a 
                         href='https://space.bilibili.com/510231072'
                         target="_blank"
-                        title="噼里啪啦"
+                        title="哔哩哔哩"
                         rel="me"
                     >
                         
@@ -335,7 +335,7 @@
 <br>
 3.<a class="link" href="https://space.bilibili.com/510231072"  target="_blank" rel="noopener"
     >哔哩哔哩站内信</a></p>
-
+<div class="comment"></div>
 </section>
 
 
@@ -367,6 +367,58 @@
      
     
         
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="QWQAWATOT/wwwqwqawacom"
+    data-repo-id="R_kgDON0ma8Q"
+    data-category="Announcements"
+    data-category-id="DIC_kwDON0ma8c4Cq7Zo"
+    data-mapping="title"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    data-loading=""
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark_dimmed');
+            }
+        }
+    })();
+</script>
+    <div class="comment"></div>
+
     
 
     <footer class="site-footer">
@@ -379,9 +431,9 @@
     </section>
     
     <section class="powerby">
-        <a href="https://icp.gov.moe/?keyword=20240343" title="萌ICP备20240343号" target="_blank">萌ICP备20240343号</a>
+        <a href="https://icp.gov.moe/?keyword=20240343" title="萌ICP备20240343号" target="_blank">萌ICP备20240343号</a> | <a style="text-decoration:none;" href="https://travel.moe/go.html" title="异次元之旅-跃迁-我们一起去萌站成员的星球旅行吧！" target="_blank">异次元之旅</a>
         <br>
-        <a href="https://ipw.cn/ipv6webcheck/?site=www.qwqawa.com" title="本站支持IPv6访问" target='_blank'>本站支持IPv6访问</a>
+        <a href="https://ipw.cn/ipv6webcheck/?site=www.qwqawa.com" title="本站支持IPv6访问" target='_blank'>本站支持IPv6访问</a> | <a href="https://ipw.cn/ssl/?site=www.qwqawa.com" title="本站支持SSL安全访问" target='_blank'>本站支持SSL安全访问</a>
         <br>
         由 <b><a href="https://gohugo.io" target="_blank" rel="noopener" data-pjax-state="">Hugo</a></b> 和 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0" data-pjax-state="">Stack</a></b> 强力驱动
     </section>
@@ -396,7 +448,7 @@
                 src="/../js/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.9b35a29f3359137d215091e315d1c70b66faa302ff8280536da2120c711b35b8.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.65f8e86ed2baf02f005fdef9f8f34bff0ea1b5ef248ba74d3feb9b73ca9a9b0d.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');
@@ -466,7 +518,6 @@
     initTocHide()
 </script>
 <script src=https://www.qwqawa.com/background/sakura.js></script>
-
 <script src="/../js/pjax.min.js"></script>
 <script>
     var pjax = new Pjax({
@@ -500,7 +551,8 @@
     document.addEventListener('pjax:complete', () => {
         
         window.Stack.init();
-    })
+        
+    });
 </script>
 
 <script>
@@ -565,9 +617,37 @@
 		
 		topbar.hide();
 	})
+</script><div class="js-Pjax">
+<script>
+    (function () {
+        
+        let comment = document.querySelector(".comment");
+        if (!comment) {
+            return
+        }
+        let script = document.createElement('script');
+        
+        script.setAttribute('src', 'https://giscus.app/client.js');
+        script.setAttribute('data-repo', 'QWQAWATOT\/wwwqwqawacom');
+        script.setAttribute('data-repo-id', 'R_kgDON0ma8Q');
+        script.setAttribute('data-category', 'Announcements');
+        script.setAttribute('data-category-id', 'DIC_kwDON0ma8c4Cq7Zo');
+        script.setAttribute('data-mapping', 'title');
+        script.setAttribute('data-strict', '0');
+        script.setAttribute('data-reactions-enabled', '1');
+        script.setAttribute('data-emit-metadata', '0');
+        script.setAttribute('data-input-position', 'top');
+        script.setAttribute('data-theme', 'light');
+        script.setAttribute('data-lang', 'zh-CN');
+        script.setAttribute('data-loading', '');
+        script.setAttribute('crossorigin', 'anonymous');
+        script.setAttribute('async', 'async');
+
+        script.async = true;
+        
+        document.querySelector('.site-footer').before(script)
+    })(document);
 </script>
-
-
-
+<div>
     </body>
 </html>

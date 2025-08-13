@@ -70,7 +70,7 @@ window.location.replace(url);
 &lt;br&gt;
 3.&lt;a class=&#34;link&#34; href=&#34;https://space.bilibili.com/510231072&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;哔哩哔哩站内信&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;div class=&#34;comment&#34;&gt;&lt;/div&gt;</description>
         </item>
         <item>
         <title>搜索</title>
